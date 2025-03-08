@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We can develop website, personalize software for small business with. We are a small team available in Jharsuguda to help small business to boost their sales throug online">
+    <title>mtechno.in Jharsuguda, Odisha, India best (website, software, data Digitization)</title>
+    <link rel="icon" href="/assests/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="/css/index.css" type="text/css"> 
+    <link rel="apple-touch-icon" href="./assests/Thumbnail.png">  
+    <meta property="og:title" content="Web Developer available at Jharsuguda, Bolangir, Bargarh, Sambalpur, Sundargarh">
+    <meta property="og:url" content="www.mtechno.in">
+    <meta property="og:description" content="We can develop website, personalize software for small business with. We are a small team available in Jharsuguda to help small business to boost their sales throug online">
+    <meta property="og:image" content="https://mtechno.in/assests/Thumbnail.png"> 
+    <meta name="p:domain_verify" content="497641179a4c10db9ca51b4e3a33d0f4"/>
+    <script defer src="/js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <nav>
+            <div class="top-row">
+                <div class="logo">
+                    <img src="/assests/Transparent_Logo.png" alt="mtechno.in logo" height="100px">
+                    <span>mtechno.in</span>
+                </div>
+                <div class="link-list">
+                    <ul>
+                        <li class="<%= data.active=='home'?'active':'' %>"><a href="/">HOME</a></li>
+                        <li class="<%= data.active=='bio'?'active':'' %>"><a href="/bio" >BIO</a></li>
+                        <li class="<%= data.active=='contact'?'active':'' %>"><a href="/contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+                
+        </nav>
+        <nav class="mobile">
+        <a href="/"><div class="ballon <%= data.active=='home'?'active':'' %>">Home</div></a>
+        <a href="/bio"><div class="ballon <%= data.active=='bio'?'active':'' %>">Bio</div></a>
+        <a href="/contact"><div class="ballon <%= data.active=='contact'?'active':'' %>">Contact</div></a>
+        </nav>
+        <div class="container">
+            <%- body %>
+        </div>
+    </div>
+</body>
+</html>
