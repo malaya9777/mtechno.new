@@ -20,15 +20,17 @@
         <div class="background"></div>
         <nav>
             <div class="top-row">
-                <div class="logo">
+                <div class="logo" onclick="location.href='/'">
+               
                     <img src="/assests/Transparent_Logo.png" alt="mtechno.in logo" height="100px">
                     <span>mtechno.in</span>
+             
                 </div>
                 <div class="link-list">
                     <ul>
-                        <li class="<%= data.active=='home'?'active':'' %>"><a href="/">HOME</a></li>
-                        <li class="<%= data.active=='bio'?'active':'' %>"><a href="/bio" >BIO</a></li>
-                        <li class="<%= data.active=='contact'?'active':'' %>"><a href="/contact">CONTACT</a></li>
+                        <li><a class="<%= data.active=='home'?'active':'' %>" href="/">HOME</a></li>
+                        <li><a class="<%= data.active=='bio'?'active':'' %>" href="/bio" >BIO</a></li>
+                        <li><a class="<%= data.active=='contact'?'active':'' %>" href="/contact">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
