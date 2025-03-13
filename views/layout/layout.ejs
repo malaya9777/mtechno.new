@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="We can develop website, personalize software for small business with. We are a small team available in Jharsuguda to help small business to boost their sales throug online">
-    <title>mtechno.in Jharsuguda, Odisha, India best (website, software, data Digitization)</title>
+    <meta name="description"
+        content="We can develop website, personalize software for small business with and Graphic elements (Video, Posters etc). We are a small team available in Jharsuguda to help small business to boost their sales throug online">
+    <title>mtechno.in Jharsuguda, Odisha, India best (website, software and graphic designing)</title>
     <link rel="icon" href="/assests/favicon.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" href="/css/index.css" type="text/css"> 
-    <link rel="apple-touch-icon" href="./assests/Thumbnail.png">  
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
+    <link rel="apple-touch-icon" href="./assests/Thumbnail.png">
     <meta property="og:title" content="Web Developer available at Jharsuguda, Bolangir, Bargarh, Sambalpur, Sundargarh">
     <meta property="og:url" content="www.mtechno.in">
-    <meta property="og:description" content="We can develop website, personalize software for small business with. We are a small team available in Jharsuguda to help small business to boost their sales throug online">
-    <meta property="og:image" content="https://mtechno.in/assests/Thumbnail.png"> 
-    <meta name="p:domain_verify" content="497641179a4c10db9ca51b4e3a33d0f4"/>
+    <meta property="og:description"
+        content="We can develop website, personalize software for small business with. We are a small team available in Jharsuguda to help small business to boost their sales throug online">
+    <meta property="og:image" content="https://mtechno.in/assests/Thumbnail.png">
+    <meta name="p:domain_verify" content="497641179a4c10db9ca51b4e3a33d0f4" />
     <script defer src="/js/app.js"></script>
 </head>
+
 <body>
     <div class="container">
-        <div class="background"></div>
-        <nav>
+        <nav class="nav-desktop">
             <div class="top-row">
                 <div class="logo" onclick="location.href='/'">
-               
-                    <img src="/assests/Transparent_Logo.png" alt="mtechno.in logo" height="100px">
+
+                    <img src="/assests/Transparent_Logo.png" alt="mtechno.in logo">
                     <span>mtechno.in</span>
-             
+
                 </div>
                 <div class="link-list">
                     <ul>
                         <li><a class="<%= data.active=='home'?'active':'' %>" href="/">HOME</a></li>
-                        <li><a class="<%= data.active=='bio'?'active':'' %>" href="/bio" >BIO</a></li>
+                        <li><a class="<%= data.active=='bio'?'active':'' %>" href="/bio">BIO</a></li>
                         <li><a class="<%= data.active=='contact'?'active':'' %>" href="/contact">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
-                
+
         </nav>
-        <nav class="mobile">
-        <a href="/"><div class="ballon <%= data.active=='home'?'active':'' %>">Home</div></a>
-        <a href="/bio"><div class="ballon <%= data.active=='bio'?'active':'' %>">Bio</div></a>
-        <a href="/contact"><div class="ballon <%= data.active=='contact'?'active':'' %>">Contact</div></a>
+
+        <div class="mobile-logo">
+            <div class="mobile-logo-container">
+                <img src="/assests/Transparent_Logo.png" alt="mtechno.in logo">
+                    <span>mtechno.in</span>
+            </div>
+        </div>
+        <nav class="nav-mobile">
+            <div class="top-row-mobile">
+                <a href="/">
+                    <div class="ballon <%= data.active=='home'?'active':'' %>">Home</div>
+                </a>
+                <a href="/bio">
+                    <div class="ballon <%= data.active=='bio'?'active':'' %>">Bio</div>
+                </a>
+                <a href="/contact">
+                    <div class="ballon <%= data.active=='contact'?'active':'' %>">Contact</div>
+                </a>
+            </div>
         </nav>
-        <div class="container">
+        <div class="container-inside">
             <%- body %>
         </div>
     </div>
 </body>
+
 </html>
