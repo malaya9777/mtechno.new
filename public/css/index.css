@@ -111,6 +111,34 @@ div.contact-container{
 div.mobile-logo{
     display: none;
 }
+
+.article{
+    margin: 20px 0;
+}
+
+.button{
+    padding: 8px 10px;
+    border-radius: 10px;
+
+}
+.outline{
+    outline: solid 1px #fff;
+}
+.article-container{
+    margin: 50px 0;
+    gap: 30px;
+    width: 100%;
+    display: inline-flex;
+}
+.content-box{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    outline: solid 1px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*Mobile Design*/
 @media only screen and (max-width:800px) {
 
