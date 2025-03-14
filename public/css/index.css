@@ -94,10 +94,6 @@ div.banner-container{
 span.sm{
     font-size: 20px;
 }
-a.spline-watermark{
-    display: none!important;
-    visibility: hidden!important;
-}
 
 div.bio-container{
     width: 100%;
@@ -115,7 +111,11 @@ div.mobile-logo{
 .article{
     margin: 20px 0;
 }
-
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .button{
     padding: 8px 10px;
     border-radius: 10px;
@@ -129,15 +129,40 @@ div.mobile-logo{
     gap: 30px;
     width: 100%;
     display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .content-box{
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    outline: solid 1px #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+footer{
+display: flex;
+justify-content: space-between;
+margin: 50px 0;
+}
+.left-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.find-me{
+    font-weight: bold;
+}
+svg.icon{
+    width: 28px;
+    fill: #fff;
+}
+a.social-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #fff;
 }
 /*Mobile Design*/
 @media only screen and (max-width:800px) {
@@ -204,5 +229,10 @@ div.mobile-logo{
         justify-content: flex-start;
         padding: 10%;
         width: 80%;
+    }
+    footer{
+        display: flex;
+        margin: 10px 20px;
+        flex-direction: column;
     }
 }
