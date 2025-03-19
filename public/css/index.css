@@ -98,11 +98,11 @@ span.sm{
 
 div.bio-container{
     width: 100%;
-    height: 500px;
+    
 }
 div.contact-container{
     width: 100%;
-    height: 500px;
+   
 }
 
 .article{
@@ -137,10 +137,9 @@ div.contact-container{
     align-items: center;
     justify-content: center;
 }
-footer{
-display: flex;
-justify-content: space-between;
-margin: 50px 0;
+.footer{
+    display: flex;
+    justify-content: space-between;
 }
 .left-footer{
     display: flex;
@@ -161,6 +160,58 @@ a.social-link{
     text-decoration: none;
     color: #fff;
 }
+.bio-container .text-container{
+    margin-top: 20px;
+}
+.bio-container .text-container p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 1px #0000001a;
+  }
+  .pulse {
+    animation: pulse-animation 2s infinite;
+  }
+  .my-photo-container{
+    border: 10px solid #00eeff;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 20px auto 0px auto;
+  }
+  .my-photo-container img{
+    width: 100%;
+  }
+  .table, tr{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00eeff;
+  }
+  td{
+    padding: 10px;
+  }
+  .table{
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 20px auto 30px auto;
+    max-width: 500px;
+    min-width: 200px;
+    border-collapse: collapse;
+  }
+
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
 /*Mobile Design*/
 @media only screen and (max-width:800px) {
 
@@ -174,7 +225,7 @@ a.social-link{
         display: flex;
         flex-direction: column;
         position:fixed;
-        top: -86%;
+        bottom: calc(100vh - 120px);
         left: 0;
         height: 100vh;
         width: 100vw;
@@ -184,9 +235,10 @@ a.social-link{
         backdrop-filter: blur(10px);
         box-shadow: 0px 5px 10px #000000c2;
         transition: all 1s;
+        overflow: hidden;
     }
     .in-front{
-        top: 0!important;;
+        bottom: 0!important;;
     }
     .mobile-logo{
         margin-bottom: 20px;
@@ -240,8 +292,7 @@ a.social-link{
         padding: 10%;
         width: 80%;
     }
-    footer{
-        display: flex;
+    .footer{
         margin: 10px 20px;
         flex-direction: column;
     }
@@ -254,4 +305,14 @@ a.social-link{
         justify-content: center;
         align-items: center;
     }
+    .bio-container .text-container{
+        margin-top: 20px;
+        padding: 0 30px;
+    }
+    .my-photo-container{
+        margin: 150px auto 0px auto;
+      }
+      .table{
+        margin-top: 150px;
+      }
 }
