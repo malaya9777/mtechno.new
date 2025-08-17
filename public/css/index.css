@@ -88,12 +88,19 @@ div.banner-container{
     justify-content: center;
 }
 .text span{
-    font-size: 60px;
+    font-size: 30px;
     color: #fff;
+    margin: 5px;
+    
+}
+.text span.second{
+    font-size: 20px;
+    color: #fff;
+    margin: 5px;
     
 }
 span.sm{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 div.bio-container{
@@ -131,11 +138,12 @@ div.contact-container{
 }
 .content-box{
     width: 200px;
-    height: 200px;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 50px;
+}
+li{
+    margin: 15px 0;
+    
 }
 .footer{
     display: flex;
