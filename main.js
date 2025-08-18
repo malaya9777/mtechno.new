@@ -15,6 +15,7 @@ app.set('views', path.join(__dirname, '/views'));
 app.use('/css', express.static(path.join(__dirname,'./public/css')));
 app.use('/assests', express.static(path.join(__dirname,'./public/assests')));
 app.use('/js', express.static(path.join(__dirname,'./public/js')));
+app.use('/sitemap', express.static(path.join(__dirname,'./public/sitemap')));
 
 
 app.use('/', require('./routers/index'))
