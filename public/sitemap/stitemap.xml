@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Homepage (Highest Priority) -->
+    <url>
+        <loc>https://mtechno.in/</loc>
+        <lastmod>2023-11-15</lastmod>
+       
+    </url>
+    
+    <!-- Core Service Pages -->
+    <url>
+        <loc>https://mtechno.in/bio</loc>
+        <lastmod>2023-11-15</lastmod>
+        
+    </url>
+    <url>
+        <loc>https://mtechno.in/blogs</loc>
+        <lastmod>2023-11-15</lastmod>
+       
+    </url>
+    <url>
+        <loc>https://mtechno.in/contact</loc>
+        <lastmod>2023-11-15</lastmod>
+       
+    </url>
+</urlset>
