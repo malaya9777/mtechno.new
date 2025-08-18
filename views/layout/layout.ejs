@@ -34,6 +34,7 @@
                     <ul>
                         <li><a class="<%= data.active=='home'?'active':'' %>" href="/">HOME</a></li>
                         <li><a class="<%= data.active=='bio'?'active':'' %>" href="/bio">BIO</a></li>
+                        <li><a class="<%= data.active=='blogs'?'active':'' %>" href="/blogs">BLOGS</a></li>
                         <li><a class="<%= data.active=='contact'?'active':'' %>" href="/contact">CONTACT</a></li>
                     </ul>
                 </div>
@@ -46,6 +47,9 @@
             <div class="top-row-mobile">
                 <a href="/">
                     <div class="ballon <%= data.active=='home'?'active':'' %>">Home</div>
+                </a>
+                <a href="/blogs">
+                    <div class="ballon <%= data.active=='blogs'?'active':'' %>">Blogs</div>
                 </a>
                 <a href="/bio">
                     <div class="ballon <%= data.active=='bio'?'active':'' %>">Bio</div>

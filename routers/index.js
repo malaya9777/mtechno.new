@@ -9,6 +9,9 @@ router.get('', async(req, res)=>{
 router.get('/bio', async(req, res)=>{
     res.render('bio', {data:{active:'bio'}});
 });
+router.get('/blogs', async(req, res)=>{
+    res.render('blogs', {data:{active:'blogs'}});
+});
 
 router.get('/contact', async(req, res)=>{
     res.render('contact', {data:{active:'contact'}});
