@@ -130,6 +130,7 @@ div.contact-container{
     outline: solid 1px #fff;
 }
 .article-container{
+    text-align: left;
     margin: 50px 0;
     gap: 30px;
     width: 100%;
