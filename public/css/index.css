@@ -16,6 +16,11 @@ div.container{
     margin: 30px auto 0 auto;
 }
 
+a.clickable:link{
+    text-decoration: none;
+    color: #00a2ff;
+}
+
 nav.nav-mobile{
     display: none;
 }
