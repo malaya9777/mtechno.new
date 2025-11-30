@@ -340,8 +340,10 @@ a.social-link{
         position: relative;
         
     }
+    div.container-inside{
+        margin-top: 200px;
+    }
     div.banner-container{
-        margin-top: 70px;
         height: auto;
         width: 100%;
         display: inline-flex;
@@ -384,7 +386,6 @@ a.social-link{
         margin-top: 150px;
       }
         .image-container{
-            margin-top: 180px;
         columns: 1;
         }
 }
