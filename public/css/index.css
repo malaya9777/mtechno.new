@@ -218,6 +218,13 @@ a.social-link{
     min-width: 200px;
     border-collapse: collapse;
   }
+  .image-container{
+    width: 100%;
+    display: flexbox;
+    padding: 10px;
+    columns: 2;
+    gap: 10px;
+  }
           .article-container {
             max-width: 700px;
             margin: 40px auto;
@@ -357,4 +364,8 @@ a.social-link{
       .table{
         margin-top: 150px;
       }
+        .image-container{
+            margin-top: 180px;
+        columns: 1;
+        }
 }
