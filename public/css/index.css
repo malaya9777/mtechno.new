@@ -191,6 +191,11 @@ a.social-link{
   .pulse {
     animation: pulse-animation 2s infinite;
   }
+  .blinker {
+    animation: blinker 2.5s linear infinite;
+    margin: none;
+    padding:none;
+  }
   .my-photo-container{
     border: 10px solid #00eeff;
     width: 200px;
@@ -220,6 +225,7 @@ a.social-link{
   }
   .image-container{
     width: 100%;
+    box-sizing: border-box;
     display: flexbox;
     padding: 10px;
     columns: 2;
@@ -259,6 +265,18 @@ a.social-link{
     }
     100% {
       box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes blinker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
     }
   }
 /*Mobile Design*/
